@@ -1,0 +1,126 @@
+
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $font-src;
+  }
+}
+
+@mixin button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  background-color: #68b738;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  border: none;
+  min-height: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-green-dark;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $basic-green-dark;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@mixin hero-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@mixin secondary-title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@mixin subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@mixin content {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-grey-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@mixin footer-icon {
+  fill: $basic-brown;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+  }
+}
+
+@mixin main-padding {
+  padding: $main-padding-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding: $main-padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: $main-padding-desktop;
+  }
+}
+
+@mixin green-line {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $basic-green;
+    z-index: -1;
+    left: 0;
+  }
+}
+
+@mixin center {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
