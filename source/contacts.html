@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bubble gum</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/lato-regular.woff2" as="font">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body class="page__body">
+    <header class="page__header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="contacts">
+        <h1 class="contacts__title">Контакты</h1>
+        <div class="contacts__phone phone">
+          <p class="phone__description">Если Вы хотите сделать заказ или задать вопросы, обращайтесь по телефону:</p>
+          <div class="phone__tel">
+            <a href="tel:89202768499">8-920-276-84-99</a>
+          </div>
+        </div>
+        <div class="contacts__address address">
+          <p class="address__description">Нас можно найти по адресу:</p>
+          <p class="address__info">г.Тула, ул.Серебровская, д.3</p>
+          <p class="address__description">Мы в социальных сетях:</p>
+        </div>
+      </section>
+
+      <section class="main-footer">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">WhatsApp</span>
+              <svg class="social__icon" width="27" height="17">
+                <use href="./images/icons/stack.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Telegram</span>
+              <svg class="social__icon" width="27" height="17">
+                <use href="./images/icons/stack.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Instagram</span>
+              <svg class="social__icon" width="27" height="17">
+                <use href="./images/icons/stack.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">© Bubble gum, Россия, Тула</p>
+      </section>
+    </main>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
+
+
