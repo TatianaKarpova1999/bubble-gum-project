@@ -1,0 +1,26 @@
+.main-header {
+  padding: 22px 26px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    padding: 29px 31px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 46px 102px;
+  }
+}
+
+.main-header__icon {
+  @media (min-width: $width-tablet) {
+    width: 187px;
+    height: 37px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 233px;
+    height: 46px;
+  }
+}
