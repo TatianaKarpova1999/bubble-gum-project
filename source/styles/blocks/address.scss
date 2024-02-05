@@ -1,0 +1,22 @@
+.address {
+  border-top: 1px solid $basic-grey;
+  padding-top: 20px;
+}
+
+.address__info {
+  @include description;
+  max-width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.address__map {
+  width: 100%;
+  height: 270px;
+}
+
+.address__image {
+  border: none;
+  width: 100%;
+}

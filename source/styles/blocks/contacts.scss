@@ -1,0 +1,15 @@
+.contacts__title {
+  @include subtitle;
+  max-width: 276px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    max-width: 575px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 739px;
+  }
+}
