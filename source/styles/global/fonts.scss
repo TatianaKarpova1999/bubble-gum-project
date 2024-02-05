@@ -1,3 +1,3 @@
 /* здесь подключите шрифты*/
-@include font-face("ArchivoNarrow", 400, normal, swap, url("../../fonts/ArchivoNarrow.woff2") format("woff2"));
-@include font-face("Airfool", normal, normal, swap, url("../../fonts/Airfool.woff2") format("woff2"));
+@include font-face("Archivo Narrow", 400, normal, swap, url("../../fonts/ArchivoNarrow.woff2") format("woff2") url("../../fonts/ArchivoNarrow.woff") format("woff"));
+@include font-face("Airfool", 400, normal, swap, url("../../fonts/Airfool.woff2") format("woff2") url("../../fonts/Airfool.woff") format("woff"));
