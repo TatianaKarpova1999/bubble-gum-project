@@ -86,7 +86,13 @@
     display: none;
   }
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
   &:focus {
+    opacity: 0.6;
     outline: none;
   }
 }

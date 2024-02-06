@@ -1,10 +1,4 @@
 .main-catalog {
-  padding: 0 22px;
-
-  @media (min-width: $width-tablet) {
-    padding: 0 95px;
-  }
-
   @media (min-width: $width-desktop) {
     padding: 0 200px;
     max-width: 1440px;
@@ -15,7 +9,8 @@
 .main-catalog__title {
   @include subtitle;
   text-align: center;
-  margin-bottom: 31px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 41px;
@@ -28,14 +23,10 @@
 
 .main-catalog__list {
   list-style-type: none;
-  margin: 0 auto;
   padding: 0;
-  max-width: 276px;
   padding-bottom: 18px;
-
-  @media (min-width: $width-tablet) {
-    max-width: 578px;
-  }
+  background-image: url("../../images/icons/catalog-decor-mobile.svg");
+  background-repeat: repeat;
 
   @media (min-width: $width-desktop) {
     display: grid;
@@ -49,4 +40,22 @@
 .main-catalog__item {
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
+}
+
+.main-catalog__link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+}
+
+.main-catalog__link-container {
+  background-color: $basic-white;
+  border-radius: 50%;
 }

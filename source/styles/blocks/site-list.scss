@@ -8,6 +8,7 @@
   transform: translate(-50%);
   width: 100%;
   background-color: $basic-white;
+  z-index: 1;
 
   @media (min-width: $width-tablet) {
     position: relative;
@@ -66,5 +67,15 @@
     @media (min-width: $width-desktop) {
       top: 33px;
     }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
   }
 }

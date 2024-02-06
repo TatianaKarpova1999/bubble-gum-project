@@ -1,5 +1,6 @@
 .main-header {
   padding: 22px 26px;
+  padding-bottom: 60px;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -25,5 +26,17 @@
   @media (min-width: $width-desktop) {
     width: 202px;
     height: 46px;
+  }
+}
+
+.main-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
   }
 }
