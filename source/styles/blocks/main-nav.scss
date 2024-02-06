@@ -60,6 +60,8 @@
 
   &--nojs .main-nav__list {
     display: block;
+    position: static;
+    transform: none;
 
     @media (min-width: $width-tablet) {
       display: flex;

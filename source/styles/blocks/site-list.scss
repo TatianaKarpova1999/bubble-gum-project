@@ -26,7 +26,7 @@
   @media (min-width: $width-tablet) {
     margin-right: 47px;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
 
     &:last-child {
@@ -36,9 +36,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    font-size: 36px;
-    line-height: 41px;
-    margin-right: 65px;
+    font-size: 20px;
+    line-height: 29px;
+    margin-right: 58px;
   }
 }
 
@@ -64,7 +64,7 @@
     }
 
     @media (min-width: $width-desktop) {
-      top: 50px;
+      top: 33px;
     }
   }
 }

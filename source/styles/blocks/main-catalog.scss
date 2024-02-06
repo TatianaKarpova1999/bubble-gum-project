@@ -6,7 +6,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding: 0 100px;
+    padding: 0 200px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -39,5 +41,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: none;
+    column-gap: 50px;
+    row-gap: 50px;
   }
+}
+
+.main-catalog__item {
+  display: flex;
+  justify-content: center;
 }
