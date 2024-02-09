@@ -71,6 +71,23 @@
     padding-top: 30px;
     margin-bottom: 50px;
   }
+
+  &--card {
+    padding: 0;
+    background-color: $basic-white;
+
+    @media (min-width: $width-tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 65px;
+      row-gap: 50px;
+      padding: 0 60px;
+    }
+
+    @media (min-width: $width-desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 .main-catalog__item {
@@ -125,6 +142,7 @@
     content: "";
     position: absolute;
     background-image: url("../../images/icons/arr.svg");
+    background-repeat: no-repeat;
     width: 13px;
     height: 7px;
     top: 29px;

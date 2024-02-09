@@ -13,6 +13,12 @@
     max-width: 1247px;
     margin-bottom: 65px;
   }
+
+  &--contacts {
+    @media (min-width: $width-tablet) {
+      max-width: 570px;
+    }
+  }
 }
 
 .phone__tel {

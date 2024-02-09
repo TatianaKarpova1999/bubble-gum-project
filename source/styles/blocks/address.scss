@@ -110,3 +110,64 @@
     height: 100%;
   }
 }
+
+.address__description {
+  @include description;
+  text-align: center;
+  max-width: 244px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  @media (min-width: $width-tablet) {
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 1247px;
+    margin-bottom: 40px;
+  }
+
+  &--social {
+    margin-bottom: 60px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../images/icons/arr-contacts.svg");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 32px;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    @media (min-width: $width-tablet) {
+      &::before {
+        top: 40px;
+      }
+    }
+  }
+}
+
+.address__home {
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 60px;
+  }
+}
