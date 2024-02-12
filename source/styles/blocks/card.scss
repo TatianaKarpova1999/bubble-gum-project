@@ -52,4 +52,14 @@
   padding-top: 7px;
   box-sizing: border-box;
   border-radius: 7px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
 }

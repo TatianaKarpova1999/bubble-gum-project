@@ -39,4 +39,16 @@
     opacity: 0.6;
     outline: none;
   }
+
+  &--index {
+    &:hover {
+      opacity: 1;
+      cursor: default;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
 }
