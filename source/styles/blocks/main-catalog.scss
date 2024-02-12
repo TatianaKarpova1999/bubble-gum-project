@@ -105,15 +105,22 @@
     margin-bottom: 0;
   }
 
-  &--button {
+  &--closed {
     position: relative;
 
-    &:hover .main-catalog__second-list {
+    & .main-catalog__second-list {
       display: block;
     }
 
-    &:hover .main-catalog__button {
+    & .main-catalog__button {
       background-color: $basic-white;
+    }
+  }
+
+  &--nojs {
+    & .main-catalog__second-list {
+      display: block;
+      position: static;
     }
   }
 }

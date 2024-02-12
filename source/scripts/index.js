@@ -1,3 +1,8 @@
+const mapAddress = document.querySelector('.address__map');
+
+mapAddress.classList.remove('address__map--nojs');
+
+
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
@@ -13,9 +18,17 @@ navToggle.addEventListener('click', () => {
   }
 });
 
+const mainCatalog = document.querySelector('.main-catalog__item');
+const catalogToggle = document.querySelector('.main-catalog__button');
 
-const mapAddress = document.querySelector('.address__map');
-const page = document.querySelector('.page--nojs');
+mainCatalog.classList.remove('main-catalog__item--nojs');
 
-mapAddress.classList.remove('address__map--nojs');
-page.classList.remove('page--nojs');
+catalogToggle.addEventListener('click', () => {
+  if (mainCatalog.classList.contains('main-catalog__item--closed')) {
+    mainCatalog.classList.remove('main-catalog__item--closed');
+    mainCatalog.classList.add('main-catalog__item--opened');
+  } else {
+    mainCatalog.classList.add('main-catalog__item--closed');
+    mainCatalog.classList.remove('main-catalog__item--opened');
+  }
+});
